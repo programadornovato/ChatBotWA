@@ -47,6 +47,10 @@ if($mensaje!=null){
     //OBTENEMOS LA RESPUESTA
     $respuesta= $rivescript->reply($mensaje);
     //ESCRIBIMOS LA RESPUESTA
-    file_put_contents("text.txt", $respuesta);
+    //file_put_contents("text.txt", $respuesta);
+    require_once "envia.php";
+    //ENVIAMOS LA RESPUESTA VIA WHATSAPP
+    enviar($mensaje,$respuesta,$id,$timestamp,$telefonoCliente);
+
 
 }
