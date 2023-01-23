@@ -1,0 +1,16 @@
+#! /usr/bin/env php
+
+<?php
+
+require 'vendor/autoload.php';
+
+use Axiom\Rivescript\Rivescript;
+use Symfony\Component\Console\Application;
+use Axiom\Rivescript\Console\ChatCommand;
+
+$app        = new Application('Rivescript PHP Interpreter', '2.0');
+$rivescript = new Rivescript;
+
+$app->add(new ChatCommand($rivescript));
+
+$app->run();

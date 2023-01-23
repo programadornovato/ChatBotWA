@@ -1,0 +1,30 @@
+{
+    "name": "axiom/collections",
+    "description": "A simple PHP collection implementation",
+    "keywords": ["axiom", "collection", "array"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shea Lewis",
+            "email": "shea.lewis89@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Axiom\\Collections\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    }
+}

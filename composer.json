@@ -1,0 +1,5 @@
+{
+    "require": {
+        "axiom/rivescript": "^0.3.0"
+    }
+}

@@ -1,0 +1,44 @@
++ hola
+- Hola, Soy un robot, esta es la informacion que te puedo ofrecer\nNuestros telefonos\nNuestra direccion\nEntregas\nPagina web\nHorarios\nMenu\n
+! var lunes = Menu del Lunes \nChiles en nogada 20.50 \nChilaquiles 15.50 \n
+! var martes = Menu del Martes \nPambasos 20.50 \nHuitlacoche 15.50 \n
+! var miercoles = Menu del Miercoles \nEnchiladas 120.50 \nCaldo de olla 15.50 \n
+! var jueves = Menu del Jueves \nTacos 120.50 \nQuesadillas 15.50 \n
+! var viernes = Menu del Viernes \nTortas 20.50 \nTacos 15.50 \n
+! var sabado = Menu del Sabado \nEnchiladas 120.50 \nHuitlacoche 15.50 \n
+! var domingo = Los domingo esta cerrado
+! var horario = Lunes abrimos de 08:00 a 18:00\nMartes abrimos de 08:00 a 18:00\nMiercoles abrimos de 08:00 a 18:00\nJueves abrimos de 08:00 a 18:00\nViernes abrimos de 08:00 a 18:00\nSabados abrimos de 08:00 a 12:00\nDomingos Cerrado\n
++ lunes *
+- <bot lunes>
++ martes *
+- <bot martes>
++ miercoles *
+- <bot miercoles>
++ jueves *
+- <bot jueves>
++ viernes *
+- <bot viernes>
++ sabado *
+- <bot sabado>
++ domingo *
+- <bot domingo>
++ (menu|carta) *
+- <bot lunes> \n <bot martes> \n <bot miercoles> \n <bot jueves> \n <bot viernes> \n <bot sabado> \n <bot domingo>
++ como estas
+@ hola
++ hay alguien*
+@ hola
++ (telefono|celular|cel) *
+- Nuestro telefono es 725648221
++ (direccion|ubicacion|lugar) *
+- Nuestra direccion Colonia Emiliano Zapata Acapulco Gro
+- Nos encontramos ubicados en la Colonia Emiliano Zapata Acapulco Gro
++ (entregas|a domicilio) *
+- Realizamos entregas a domicilio solo de lunes a viernes de 12:00 a 15:00
++ (pagina web|web|pagina) *
+- Visitanos en https://www.programadornovato.com
++ (hora|horarios|dias|abierto) *
+- <bot horario>
++ *
+- Recuerda que soy un robot, me podrías preguntar de otra forma
+- Intenta hacer tu pregunta de otra manera.
